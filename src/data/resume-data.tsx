@@ -112,7 +112,7 @@ export const RESUME_DATA = {
       logo: ConsultlyLogo,
       link: {
         label: "boundaries",
-        href: "/about",
+        href: "/boundaries",
       },
     },
   
