@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { BOUNDARIES_DATA } from "@/data/boundaries-data";
 import { ProjectCard } from "@/components/project-card";
 import PagesLayout from './layout'; // Adjust path if needed
-import { ReactElement } from "react";
+import { ReactElement, ReactNode } from "react";
 
 export const metadata: Metadata = {
   title: `${BOUNDARIES_DATA.name} | ${BOUNDARIES_DATA.about}`,
@@ -205,6 +205,11 @@ export default function Page() {
 }
 Page.getLayout = function getLayout(page: ReactElement) {
   return (
-    <PagesLayout>{page}</PagesLayout>
-  )
-}
+    <PagesLayout metadata={metadata}>
+      {/* Enclose metadata.title in curly braces */}
+      <title>{metadata.title as ReactNode}</title>
+      {page}
+    </PagesLayout>
+  );
+};
+
