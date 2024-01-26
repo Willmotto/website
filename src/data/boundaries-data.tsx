@@ -18,6 +18,15 @@ import {
   YearProgressLogo,
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import img1 from "@/images/Boundaries/img1.jpeg"; // Adjust path and extension
+import img2 from "@/images/Boundaries/img2.jpeg"; // Adjust path and extension
+
+
+export const BOUNDARIES_IMAGE = {
+  img1: img1,
+  img2: img2,
+} as const;
+
 
 export const BOUNDARIES_DATA = {
   name: "Boundaries",
@@ -26,9 +35,11 @@ export const BOUNDARIES_DATA = {
   locationLink: "https://www.google.com/maps/place/Manchester",
   about:
     "Product Designer, currently studying Product Design & Craft at Manchester School of Art.",
-  summary:
+  img1:
     "Studying Product Design & Craft with a focus into ceramics. Driven by a passion for bringing ideas to life through tangible expression. Learning ceramic techniques, with a keen eye for detail and a dedication to exploring the boundaries of material and form. Seeking opportunities to leverage my creative expertise and analytical approach in diverse design fields, with a particular interest in the intricate world of watchmaking.",
-  avatarUrl: "https://pbs.twimg.com/profile_images/1636779531326439451/rGOcaqOj_400x400.jpg",
+  img2:
+    "Studying Product Design & Craft with a focus into ceramics. Driven by a passion for bringing ideas to life through tangible expression. Learning ceramic techniques, with a keen eye for detail and a dedication to exploring the boundaries of material and form. Seeking opportunities to leverage my creative expertise and analytical approach in diverse design fields, with a particular interest in the intricate world of watchmaking.",
+    avatarUrl: "https://pbs.twimg.com/profile_images/1636779531326439451/rGOcaqOj_400x400.jpg",
   personalWebsiteUrl: "https://Williammawdsley.com",
   contact: {
     email: "Williammawdsley@outlook.com",
