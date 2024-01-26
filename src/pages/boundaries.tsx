@@ -17,7 +17,7 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: `${BOUNDARIES_DATA.name} | ${BOUNDARIES_DATA.about}`,
-  description: BOUNDARIES_DATA.summary,
+  description: BOUNDARIES_DATA.about,
 };
 
 export default function Boundaries() {
